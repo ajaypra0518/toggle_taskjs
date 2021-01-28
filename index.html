@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-   
+
 </head>
 
 <body>
     <div class="cover myelement">
-            <nav>
-                <div class="masthead myelement">
-                    <h1>Branding</a></h1>
-                    <div id="mymenutoggle" class="mymenutoggle myelement" onclick="myfun()">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </div>
+        <nav>
+            <div class="masthead myelement">
+                <h1>Branding</a></h1>
+                <div id="mymenutoggle" class="mymenutoggle myelement">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
                 </div>
-                <div class="mynavlist myelement">
-                    <ul>
-                        <h1>Demo Reel</h1>
-                        <h1>Faces</h1>
-                        <h1>Blog</h1>
-                        <h1>About</h1>
-                        <h1>Contact</h1>
-                    </ul>
-                </div>
-            </nav> </header>
+            </div>
+            <div class="mynavlist myelement">
+                <ul>
+                    <h1>Demo Reel</h1>
+                    <h1>Faces</h1>
+                    <h1>Blog</h1>
+                    <h1>About</h1>
+                    <h1>Contact</h1>
+                </ul>
+            </div>
+        </nav>
+        </header>
         <div class="mycontent">
             <h2>About</h2>
             <p>Woot! Got the (vanilla) Javascript to work!</p>
@@ -45,19 +46,22 @@
                 Sit eius dolorem minima totam a iusto praesentium eligendi, officia sed voluptate provident dolorum
                 velit repellat numquam molestias exercitationem magnam optio nisi illo architecto. Harum laborum hic
                 doloribus ea quos!.</p>
-            </div>
-     
+        </div>
+
     </div>
 
     <script>
         var x = document.getElementsByClassName("myelement");
-        // console.log(x)
-        function myfun(){
-            // console.log("mzkdldk")
+       
+        document.getElementById('mymenutoggle').addEventListener('click', () => {
             for (var i = 0; i < x.length; i++) {
                 x[i].classList.toggle("addmyclass");
             }
-        }
+        })
+       
+
+        
+
     </script>
 </body>
 
