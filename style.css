@@ -1,0 +1,121 @@
+  body {
+            background-color: rgb(50, 101, 134);
+        }
+
+        .cover {
+            display: flex;
+            max-width: 1550px;
+            padding-top: .5rem;
+            width: 93%;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0 auto;
+
+        }
+
+        .masthead {
+            width: 100%;
+            align-items: baseline;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            
+        }
+
+        .masthead h1 {
+            transition-delay: 450ms;
+        }
+
+        .mymenutoggle {
+            cursor: pointer;
+            width: 55px;
+            z-index: 3;
+        }
+
+        .mymenutoggle div {
+            height: 7px;
+            transition-duration: 250ms;
+            background-color: black;
+
+        }
+
+        .mymenutoggle .one,
+        .mymenutoggle .two {
+            margin-bottom: 7px;
+        }
+
+        .mycontent {
+            flex: auto;
+        }
+
+        .mycontent h2 {
+            letter-spacing: 1.5px;
+            margin-bottom: .6rem;
+            text-transform: uppercase;
+        }
+
+        .mycontent p {
+            font-size: 1.1rem;
+            letter-spacing: 1.7px;
+            line-height: 1.35;
+           
+           
+        }
+
+
+        .mynavlist ul {
+            position: absolute;
+            top: -30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+            z-index: 2000;
+        }
+
+       
+
+        .mynavlist .mobile-hide {
+            display: none;
+        }
+
+       
+
+        .mymenutoggle.addmyclass .one {
+            box-shadow: 0px 3px 13px rgba(0, 0, 0, .4);
+            transform: translate(0, 14px) rotate(45deg);
+        }
+
+        .mymenutoggle.addmyclass .two {
+            background-color: transparent;
+            box-shadow: none;
+            transform: translateX(-55px);
+        }
+
+        .mymenutoggle.addmyclass .three {
+            box-shadow: 0px 3px 13px rgba(0, 0, 0, .4);
+            transform: translate(0, -14px) rotate(-45deg);
+        }
+
+        .mynavlist.addmyclass::before,
+        .mynavlist.addmyclass::after {
+            width: 25vw;
+
+        }
+
+        .mynavlist.addmyclass ul {
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition-delay: 560ms;
+            transition-duration: 240ms;
+        }
+
+    
+        .cover.addmyclass p {
+            color: rgb(50, 101, 134);
+            transition-delay: 150ms;
+            transition-duration: 350ms;
+        }
